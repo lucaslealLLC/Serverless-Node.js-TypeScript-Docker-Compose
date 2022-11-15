@@ -11,7 +11,7 @@ describe('delete book integration test', () => {
     test('it should take body with valid id, response status code 200', async () => { 
         const event = APIGatewayRequest({
             body: {
-                id: 18
+                id: 1
             },
             httpMethod: "DELETE",
             path: '/books',

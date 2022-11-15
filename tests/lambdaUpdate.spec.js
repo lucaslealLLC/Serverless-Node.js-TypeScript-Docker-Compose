@@ -14,7 +14,7 @@ describe('update book integration test', () => {
     test('it should take a body and response status code 200 and the object updated and returned from database', async () => { 
         const event = APIGatewayRequest({
             body: {
-                id: 10,
+                id: 2,
                 title: title,
                 author: author
             },
