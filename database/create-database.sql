@@ -19,3 +19,17 @@ CREATE TABLE IF NOT EXISTS basicDataBase_dev.books (
 	updatedAt TIMESTAMP DEFAULT NOW(),
     UNIQUE(title)
 );
+
+-- Mock data to run initial integration tests
+
+INSERT INTO basicDataBase_dev.books (title, author) 
+VALUES ('Republic', 'Plato');
+
+INSERT INTO basicDataBase_dev.books (title, author)
+VALUES ('Metaphisycs', 'Aristotle');
+
+INSERT INTO basicDataBase_dev.books (title, author) 
+VALUES ('Macbeth', 'W. Shakespeare');
+
+INSERT INTO basicDataBase_dev.books (title, author) 
+VALUES ('Hamlet', 'W. Shakespeare');
